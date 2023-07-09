@@ -42,7 +42,7 @@ function Search() {
             </div>
             <div className='flex justify-center'>
             <button className='border-2  w-48 h-8 border-none bg-green-500 rounded-xl font-semibold text-white' onClick={submit}>Search</button></div>
-            <div className='p-10 sm:h-48'>Note: This app is still in development and the API is slow so you might need to click multiple times to get results. </div>
+            <div className='p-10 mt-20 text-center sm:h-48'>Note: This app is still in development and the API is slow so you might need to click multiple times to get results. </div>
 
 
         </>
