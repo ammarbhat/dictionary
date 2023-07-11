@@ -13,11 +13,14 @@ function Search() {
         fetch(`https://www.dictionaryapi.com/api/v3/references/sd3/json/${search}?key=8ddc963b-1fbb-4d69-a0bf-72e57e73453a`)
             .then(resp => resp.json())
             .then(resp => setData(resp))
-            .then(setName(search.toUpperCase()))
             .then(console.log(data[0].shortdef))
             .catch(error => console.error(error))
         setDef(data[0].shortdef.map(mean => <div><li>{mean}</li> </div>))
     }
+    React.useEffect(() => {
+    setName(search.toUpperCase())
+    
+    },[def])
 
 
 
