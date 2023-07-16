@@ -39,8 +39,8 @@ function Search() {
   }, [def]);
 
   return (
-    <>
-      <div className="flex justify-center items-center p-8">
+    <div className="h-96">
+      <div className="flex justify-center mt-16  items-center p-8">
         <input
           className="p-2 rounded-l-full outline-none px-5  border"
           placeholder="Your word"
@@ -56,11 +56,8 @@ function Search() {
         </button>
       </div>
       {def ? <SearchR name={name} def={def} /> : null}
-      <div className="p-10 mt-20 mb-20 text-center sm:h-48">
-        Note: This app is still in development and the API is slow so you might
-        need to click multiple times to get results.{" "}
-      </div>
-    </>
+      
+    </div>
   );
 }
 
