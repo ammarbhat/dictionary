@@ -56,7 +56,7 @@ function Search() {
         </button>
       </div>
       {def ? <SearchR name={name} def={def} /> : null}
-      <div className="p-10 mt-20 mb-10 text-center sm:h-48">
+      <div className="p-10 mt-20 mb-20 text-center sm:h-48">
         Note: This app is still in development and the API is slow so you might
         need to click multiple times to get results.{" "}
       </div>
